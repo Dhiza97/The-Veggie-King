@@ -276,7 +276,7 @@ a {
 }
 
 #contact .head-4 {
-  width: 19%;
+  width: 100%;
   margin: 0 auto;
   text-align: center;
 }
@@ -371,4 +371,303 @@ a {
 .copy {
   font-size: 1.2rem;
   padding: 15px 0 15px 50px;
+}
+
+/* Media Queries */
+/* Mobile Devices */
+@media only screen and (max-width: 767px) {
+  /* Navigation Bar */
+  .nav-bar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo {
+    margin-left: 0;
+    margin-top: 15px;
+  }
+
+  .menu-nav ul {
+    margin: 0;
+  }
+
+  .menu-nav li {
+    display: block;
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  .display {
+    margin-bottom: 0;
+  }
+
+  .display-info {
+    margin: 150px 0 0 50px;
+  }
+
+  .green {
+    display: none;
+  }
+  .white {
+    width: 100%;
+  }
+
+  .display .food {
+    display: none;
+  }
+
+  .pepper {
+    display: none;
+  }
+
+  /* Value section */
+  .value {
+    position: relative;
+    height: 1000px;
+    margin-bottom: 0;
+  }
+
+  .value img {
+    top: 17.5%;
+  }
+
+  #about {
+    float: left;
+    margin-top: 700px;
+    width: 100%;
+  }
+
+  /* Menu Section */
+  #menu {
+    position: relative;
+    height: 1400px;
+  }
+
+  #menu .menu-card {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .meal-info {
+    background-color: white;
+  }
+
+  /* Happy Customers */
+  #customers .grid-images{
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  #customers .grid-images img {
+    width: 600px;
+  }
+
+  /* Contact Us */
+  #contact {
+    height: 600px;
+  }
+
+  .head-4 {
+    width: 100%;
+  }
+
+  .contact-info {
+    flex-direction: column;
+    padding-left: 104px;
+  }
+
+  /* Footer */
+  .footer-nav {
+    flex-direction: column;
+  }
+
+  .footer-logo {
+    margin-bottom: 30px;
+  }
+
+  .footer-menu-nav {
+    margin-bottom: 32px;
+  }
+
+  .footer-menu-nav li {
+    display: block;
+    margin-bottom: 15px;
+  }
+
+  .footer-menu-nav ul li::after {
+    content: "";
+    width: 0;
+    height: 2px;
+    background: orange;
+    display: block;
+    transition: 0.5s;
+    margin: auto;
+  }
+  
+  .footer-menu-nav ul li:hover::after {
+    width: 28%;
+  }
+  
+  .footer-menu-nav ul li a:hover {
+    color: #2e7d33;
+  }
+
+  #about,
+  #contact,
+  .footer {
+    text-align: center;
+  }
+
+  .copy {
+    padding-left: 0;
+  }
+}
+
+
+/* Tablet Devices */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  /* Navigation Bar */
+  .nav-bar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo {
+    margin-left: 0;
+    margin-top: 15px;
+  }
+
+  .menu-nav ul {
+    margin: 0;
+  }
+
+  .menu-nav li {
+    display: block;
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  /* Banner */
+  .display {
+    margin-bottom: 0;
+  }
+
+  .display-info {
+    margin: 150px 0 0 50px;
+  }
+
+  .green {
+    width: 40%;
+  }
+  .white {
+    width: 60%;
+  }
+
+  .display .food {
+    right: 5%;
+  }
+
+  /* Value section */
+  .value {
+    height: 600px;
+    margin-bottom: 0;
+  }
+
+  .value img {
+    top: 17.5%;
+  }
+
+  #about {
+    float: right;
+    position: absolute;
+    right: -15%;
+    width: 40%;
+    text-align: left;
+  }
+
+  /* Menu Section */
+  #menu {
+    position: relative;
+    height: 1100px;
+  }
+
+  #menu .menu-card {
+    display: flex;
+    flex-direction: column;
+    flex-flow: row wrap;
+  }
+
+  .meal-info {
+    background-color: white;
+  }
+
+  /* Happy Customers */
+  #customers .grid-images{
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0;
+  }
+
+  #customers .grid-images img {
+    width: 500px;
+  }
+
+  /* Contact Us */
+  #contact {
+    height: 400px;
+  }
+
+  .head-4 {
+    width: 100%;
+  }
+
+  .contact-info {
+    display: flex;
+    flex-direction: column;
+    flex-flow: row wrap;
+  }
+
+  /* Footer */
+  .footer-nav {
+    flex-direction: column;
+  }
+
+  .footer-logo {
+    margin-bottom: 30px;
+  }
+
+  .footer-menu-nav {
+    margin-bottom: 32px;
+  }
+
+  .footer-menu-nav li {
+    display: block;
+    margin-bottom: 15px;
+  }
+
+  .footer-menu-nav ul li::after {
+    content: "";
+    width: 0;
+    height: 2px;
+    background: orange;
+    display: block;
+    transition: 0.5s;
+    margin: auto;
+  }
+  
+  .footer-menu-nav ul li:hover::after {
+    width: 10%;
+  }
+  
+  .footer-menu-nav ul li a:hover {
+    color: #2e7d33;
+  }
+
+  #contact,
+  .footer {
+    text-align: center;
+  }
+
+  .copy {
+    padding-left: 0;
+  }
 }
