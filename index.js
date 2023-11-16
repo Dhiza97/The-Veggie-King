@@ -1,6 +1,14 @@
-/* This is an example JavaScript file, feel free to remove/edit it anytime */
-console.log(
-  "%cProject by BigDevSoon",
-  'font-size: 40px; font-weight: bold; color: #8A2BE2; font-family: "Comic Sans MS", cursive, sans-serif;'
-);
-console.log("Check out more projects at https://bigdevsoon.me");
+const imageContainer = document.getElementById("image-container");
+const myImage = document.getElementById("myImage");
+
+const imageArray = ["./assets/images/hero-section-slide-food-1.png", 
+                    "./assets/images/hero-section-slide-food-2.png", 
+                    "./assets/images/hero-section-slide-food-3.png",
+                    "./assets/images/hero-section-slide-food-4.png"]; // Add more image URLs as needed
+let currentIndex = 0;
+
+setInterval(() => {
+   currentIndex = (currentIndex + 1) % imageArray.length;
+   myImage.src = imageArray[currentIndex];
+}, 3000); // Change image every 3 seconds (adjust as needed)
+
