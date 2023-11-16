@@ -375,7 +375,7 @@ a {
 
 /* Media Queries */
 /* Mobile Devices */
-@media only screen and (max-width: 767px) {
+@media screen and (max-width: 767px) {
   /* Navigation Bar */
   .nav-bar {
     flex-direction: column;
