@@ -11,13 +11,3 @@ setInterval(() => {
    currentIndex = (currentIndex + 1) % imageArray.length;
    myImage.src = imageArray[currentIndex];
 }, 3000); // Change image every 3 seconds (adjust as needed)
-
-document.addEventListener('DOMContentLoaded', function () {
-   const hamburgerMenu = document.querySelector('.hamburger-menu');
-   const menuNav = document.querySelector('.menu-nav');
- 
-   hamburgerMenu.addEventListener('click', function () {
-      hamburgerMenu.classList.toggle('active')
-      menuNav.classList.toggle('show');
-   });
- }); 
