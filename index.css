@@ -18,8 +18,19 @@ a {
 
 /* Navigation Bar */
 
-nav {
+.nav-container {
   box-shadow: 0 4px 8px rgb(114, 114, 114);
+}
+
+.navbar-toggler:focus {
+  outline: none; /* Remove the default outline */
+  border-color: transparent; /* Set the border color to transparent */
+  box-shadow: none; /* Remove any box shadow */
+}
+
+
+.logo {
+  margin-left: 22px;
 }
 
 .menu-nav ul li::after {
@@ -57,6 +68,11 @@ nav {
   background-color: #fff;
   height: 100vh;
   padding: 0;
+}
+
+.white-container-items {
+  position: absolute;
+  top: 30%;
 }
 
 .green-container {
@@ -250,8 +266,8 @@ nav {
 .contact-info .box {
   border-radius: 80px;
   margin: 29px 15px 0;
-  width: 300px;
-  height: 130px;
+  width: 400px;
+  height: 150px;
   text-align: center;
   box-shadow: 0 4px 8px rgb(114, 114, 114);
 }
@@ -264,6 +280,7 @@ nav {
 
 .contact-info .box h3 {
   margin-bottom: 8px;
+  margin-top: 10px;
 }
 
 .contact-info .box p {
@@ -332,13 +349,18 @@ nav {
 
 /* Apply styles starting from medium devices and up to extra large devices */
 @media (min-width: 600px) and (max-width: 1199.98px) { 
+
+  .logo {
+    margin-left: 5px;
+  }
+
   .white-container-items {
     position: absolute;
     top: 20%;
   }
 
   .food {
-      right: -25%;
+      right: -5%;
       top: 12%;
     }
 
@@ -363,5 +385,13 @@ nav {
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: repeat(2, 0.9fr);
       gap: 0;
+    }
+
+    /* Contact */
+    .contact-info {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
     }
  }
