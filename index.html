@@ -49,7 +49,7 @@
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse d-flex flex-lg-row-reverse align-items-center" id="navbarNav">
-              <ul class="navbar-nav menu-nav">
+              <ul class="navbar-nav">
                 <li class="nav-item">
                   <a class="nav-link active" aria-current="page" href="#">ABOUT US</a>
                 </li>
@@ -71,8 +71,9 @@
       <div class="container-fluid display">
 
         <div class="row">
-          <div class="col-12 col-sm-8 white-container ps-5">
-            <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3 mt-5">Healthy & Fresh <br> Food For You</h1>
+          <div class="col-md-8 white-container ps-5">
+            <div class=" white-container-items">
+            <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Healthy & Fresh <br> Food For You</h1>
             <p class="lead">Created for lovers of healthy,<br> delicious and non-obvious food</p>
 
             <button type="button" class="btn">
@@ -82,8 +83,9 @@
                 </svg>
             </button>
           </div>
+          </div>
 
-          <div class="col-12 col-sm-4 green-container">
+          <div class="col-md-4 green-container">
             <img src="" alt="" id="myImage" class="food">
           </div>
         </div>
@@ -95,13 +97,13 @@
 
     <!-- Values -->
     <section>
-      <div class="value">
+      <div class="value container-fluid">
         <div class="green-circle"></div>
         <img src="./assets/images/about-us-section-food.png" alt="">
-        <div id="about">
-          <p class="head-1">About Us</p>
+        <div id="about" class="text-center">
+          <p class="head-1 lead">About Us</p>
           <h2>Few words about us</h2>
-          <p>
+          <p class="lead">
             We are not ordinary food truck.We create a place
             overflowing with positive energy that it expresses
             Values important to us. Get to know them specifically.
@@ -114,55 +116,68 @@
     <section>
 
       <div id="menu">
-        <div class="head-2">Menu</div>
+        <div class="head-2 lead">Menu</div>
         <h2>Explore our best food</h2>
         <p>Below you can see our best selling meals!</p>
 
-        <div class="menu-card">
-          <div class="card-item">
-            <div><img src="./assets/images/menu-section-mighty-burger.png" alt=""></div>
-            <div class="meal-info">
-              <h3>Mighty burger</h3>
-              <p>Served with fries and drink</p>
+      <div class="container-fluid">
+        <div class="row">
+    
+          <!-- Card 1 -->
+          <div class="col-12 col-sm-6 col-md-4 col-lg-4 mb-4">
+            <div class="card card-item">
+              <img src="./assets/images/menu-section-mighty-burger.png" class="card-img-top" alt="Card Image">
+              <div class="card-body">
+                <h5 class="card-title">Mighty burger</h5>
+                <p class="card-text">Served with fries and drink.</p>
+              </div>
             </div>
           </div>
-
-          <div class="card-item">
-            <div><img src="./assets/images/menu-section-chickpae-salad.png" alt=""></div>
-            <div class="meal-info">
-              <h3>Chickpea's salad</h3>
-              <p>Served with fries and drink</p>
+    
+          <!-- Card 2 -->
+          <div class="col-12 col-sm-6 col-md-4 col-lg-4 mb-4">
+            <div class="card card-item">
+              <img src="./assets/images/menu-section-chickpae-salad.png" class="card-img-top" alt="Card Image">
+              <div class="card-body">
+                <h5 class="card-title">Chickpea's salad</h5>
+                <p class="card-text">Served with fries and drink.</p>
+              </div>
             </div>
           </div>
-
-          <div class="card-item">
-            <div><img src="./assets/images/menu-section-chickpae-wrap.png" alt=""></div>
-            <div class="meal-info">
-              <h3>Chickpea's wrap</h3>
-              <p>Served with fries and drink</p>
+    
+          <!-- Card 3 -->
+          <div class="col-12 col-sm-6 col-md-4 col-lg-4 mb-4">
+            <div class="card card-item">
+              <img src="./assets/images/menu-section-chickpae-wrap.png" class="card-img-top" alt="Card Image">
+              <div class="card-body">
+                <h5 class="card-title">Chickpea's wrap</h5>
+                <p class="card-text">Served with fries and drink.</p>
+              </div>
             </div>
           </div>
+    
         </div>
       </div>
+    
 
     </section>
 
 
     <!-- Happy Customers -->
     <section>
-      <div id="customers">
+      <div id="customers" class="container-fluid">
         <div class="head-3">
           <h2>Good food = happy clients</h2>
         </div>
 
-        <div class="grid-images">
-          <div class="item"><img src="./assets/images/gallery-photo-1.png" alt=""></div>
-          <div class="item"><img src="./assets/images/gallery-photo-2.png" alt=""></div>
-          <div class="item"><img src="./assets/images/gallery-photo-3.png" alt=""></div>
-          <div class="item"><img src="./assets/images/gallery-photo-4.png" alt=""></div>
-          <div class="item"><img src="./assets/images/gallery-photo-5.png" alt=""></div>
-          <div class="item"><img src="./assets/images/gallery-photo-6.png" alt=""></div>
-        </div>
+          <div class="grid-images">
+            <div class="item"><img src="./assets/images/gallery-photo-1.png" alt=""></div>
+            <div class="item"><img src="./assets/images/gallery-photo-2.png" alt=""></div>
+            <div class="item"><img src="./assets/images/gallery-photo-3.png" alt=""></div>
+            <div class="item"><img src="./assets/images/gallery-photo-4.png" alt=""></div>
+            <div class="item"><img src="./assets/images/gallery-photo-5.png" alt=""></div>
+            <div class="item"><img src="./assets/images/gallery-photo-6.png" alt=""></div>
+          </div>
       </div>
     </section>
 
