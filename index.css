@@ -33,7 +33,7 @@ a {
   margin-left: 22px;
 }
 
-.menu-nav ul li::after {
+.menu-nav a::after {
   content: "";
   width: 0;
   height: 2px;
@@ -43,11 +43,11 @@ a {
   margin: auto;
 }
 
-.menu-nav ul li:hover::after {
+.menu-nav a:hover::after {
   width: 100%;
 }
 
-.menu-nav ul li a:hover {
+.menu-nav a:hover {
   color: #2e7d33;
 }
 
@@ -348,7 +348,29 @@ a {
 
 
 /* Apply styles starting from medium devices and up to extra large devices */
-@media (min-width: 600px) and (max-width: 1199.98px) { 
+@media (min-width: 600px) and (max-width: 1200px) { 
+
+  .menu-nav {
+    text-align: center;
+  }
+
+  .menu-nav a::after {
+    content: "";
+    width: 0;
+    height: 2px;
+    background: orange;
+    display: block;
+    transition: 0.5s;
+    margin: auto;
+  }
+  
+  .menu-nav a:hover::after {
+    width: 32%;
+  }
+  
+  .menu-nav a:hover {
+    color: #2e7d33;
+  }
 
   .logo {
     margin-left: 5px;
