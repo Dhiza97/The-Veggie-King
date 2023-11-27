@@ -54,7 +54,6 @@ a {
 /* Banner */
 .display {
   height: 790px;
-  width: 100%;
   padding: 0;
   position: relative;
   overflow: hidden;
@@ -115,7 +114,6 @@ a {
 /* Values Section */
 
 .value {
-  width: 100%;
   height: 100vh;
   position: relative;
 }
@@ -160,7 +158,6 @@ a {
 
 /* Explore Section */
 #menu {
-  width: 100%;
   height: 100vh;
   margin-top: 100px;
 }
@@ -208,9 +205,6 @@ a {
 }
 
 /* Happy Customers */
-#customers {
-  width: 100%;
-}
 
 .head-3 {
   display: flex;
@@ -231,7 +225,6 @@ a {
 }
 
 .grid-images img {
-  width: 480px;
   height: 320px;
   object-fit: cover;
   transition: transform 0.3s ease-in-out;
@@ -243,12 +236,10 @@ a {
 
 /* Contact us */
 #contact {
-  width: 100%;
   margin: 140px 0 100px;
 }
 
 #contact .head-4 {
-  width: 100%;
   margin: 0 auto;
   text-align: center;
 }
@@ -289,7 +280,6 @@ a {
 
 /* Footer section */
 .footer {
-  width: 100%;
   margin-top: 190px;
 }
 
@@ -396,7 +386,6 @@ a {
 
     /* Explore Section */
     #menu {
-      width: 100%;
       margin-top: 100px;
     }
 
